@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Canvas Tests</title>
+  <link rel=stylesheet type=text/css href=style.css>
+  <!-- Import EaselJS Framework -->
+  <script src="easeljs/utils/UID.4.2.js"></script>
+  <script src="easeljs/geom/Matrix2D.4.2.js"></script>
+  <script src="easeljs/events/MouseEvent.4.2.js"></script>
+  <script src="easeljs/utils/SpriteSheetUtils.4.2.js"></script>
+  <script src="easeljs/display/SpriteSheet.4.2.js"></script>
+  <script src="easeljs/display/Shadow.js"></script>
+  <script src="easeljs/display/DisplayObject.4.2.js"></script>
+  <script src="easeljs/display/Container.4.2.js"></script>
+  <script src="easeljs/display/Stage.4.2.js"></script>
+  <script src="easeljs/display/Bitmap.js"></script>
+  <script src="easeljs/display/BitmapAnimation.4.2.js"></script>
+<!--  <script src="easeljs/display/Text.js"></script>-->
+  <script src="easeljs/utils/Ticker.js"></script>
+  <script src="easeljs/geom/Rectangle.4.2.js"></script>
+<!--  <script src="easeljs/geom/Point.js"></script>-->
+  <!-- End EaselJS Imports -->
+  <script src=base.js></script>
+</head>
+<body>
+  <article>
+  <canvas id=testCanvas>
+    <label><input type=checkbox id=showA>Show As</label>
+    <label><input type=checkbox id=showB>Show Bs</label>
+  </canvas>
+  <canvas id=grid height=64 width=240></canvas>
+  </article>
+  <button id="Start" onclick=init();>Start</button><button id="Reset" onclick="reset();">Reset</button>
+  <script>document.getElementById("testCanvas").width=screen.width/5;
+    document.getElementById("testCanvas").height=64;</script>
+  <script src=monsterrun.js></script>
+<!--  <script>
+    var gridCtx=document.getElementById("grid").getContext("2d");
+    gridify(gridCtx,"red",16);
+  </script>-->
+<!--  <script src=paths.js></script>-->
+<!--<script src=../EaselJS/lib/easeljs-0.4.2.min.js></script>-->
+<!--<script src=main.js></script>-->
+</body>
+</html>
